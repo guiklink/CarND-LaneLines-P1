@@ -2,8 +2,8 @@
 
 ## Writeup
 
-<iframe src="https://player.vimeo.com/video/141565569" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/220265426">Detecting Lines</a> from <a href="https://vimeo.com/220265426"></a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+[![Detecting Lines](https://i.vimeocdn.com/video/638225382_640x360.jpg)](https://vimeo.com/220265426 "Detecting Lines")
 
 ---
 
