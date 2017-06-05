@@ -2,9 +2,8 @@
 
 ## Writeup
 
-<video width="960" height="540" controls>
-  <source src="https://vimeo.com/220265426">
-</video>
+<iframe src="https://player.vimeo.com/video/141565569" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/220265426">Detecting Lines</a> from <a href="https://vimeo.com/220265426"></a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 
 ---
 
