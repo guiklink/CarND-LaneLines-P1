@@ -17,5 +17,5 @@ Output
 ---
 
 The ouput pictres of each step of my solution can be found in [Processing_Steps](./test_images/Processing_Steps).
-The ouput video with lines highlighted in red can be found in [test_videos_output](./test_videos_output).
+The ouput video with lines highlighted in red can be found in [test_videos_output](https://vimeo.com/220265426).
 

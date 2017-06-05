@@ -3,7 +3,7 @@
 ## Writeup
 
 <video width="960" height="540" controls>
-  <source src="https://github.com/guiklink/CarND-LaneLines-P1/blob/master/test_videos_output/solidWhiteRight.mp4">
+  <source src="https://vimeo.com/220265426">
 </video>
 
 ---
@@ -30,7 +30,7 @@ The goals / steps of this project are the following:
 
 ### 1. Pipeline
 
-My pipeline consisted of 5 steps.
+My pipeline consists of 5 steps.
 1. Convert images to grayscale
 2. Apply Gaussian Blur
 3. Use Canny alghorithm do use the gradient to detect edges
