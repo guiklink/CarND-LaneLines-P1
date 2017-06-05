@@ -15,21 +15,32 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images/Processing_Steps/solidWhiteCurve_1_Gray.jpg "Grayscale"
+[image2]: ./test_images/Processing_Steps/solidWhiteCurve_2_GrayBlur.jpg "Blur"
+[image3]: ./test_images/Processing_Steps/solidWhiteCurve_3_Canny.jpg "Blur"
+[image4]: ./test_images/Processing_Steps/solidWhiteCurve_4_Masked.jpg "Blur"
+[image5]: ./test_images/Processing_Steps/solidWhiteCurve_5_Lines.jpg "Blur"
+[image6]: ./test_images/Processing_Steps/solidWhiteCurve_6_Out.jpg "Blur"
 
 ---
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline
 
 My pipeline consisted of 5 steps.
 1. Convert images to grayscale
+![alt text][image1]
 2. Apply Gaussian Blur
+![alt text][image2]
 3. Use Canny alghorithm do use the gradient to detect edges
+![alt text][image3]
 4. Apply a mask to extract an area of interest
+![alt text][image4]
 5. Detect lines using the Hough transformation
+![alt text][image5]
 6. Apply the detected lines on the initial image
+![alt text][image6]
 
 In order to improve the lines that will be drawn I extrapoleted lines in the function **extrapolate_lines**. To do so, first I got all the small segments retrieved from the Hough line detector and divided in two groups accordingly to the value of its slope, hence a positive slope means it is a segment from the left line and negative slope means it is be a segment of the right line of the road. Segments with slope 0 should be noise and not be considered. Once the segments are divided in buckets for the two lines a [polyfit](https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html) function from the **numpy** library can be used to fit a line to these points. Then, having an equation of the line points are picked on an arbitrary subinterval (default resolution 10), starting at the bottom of the image until the top of the mask and the line is plot.
 
